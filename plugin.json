@@ -1,0 +1,10 @@
+{
+	"id": "nodebb-plugin-table-addclass",
+	"name": "Table add class",
+	"description": "NodeBB Plugin that add Bootstrap table classes to tables without class.",
+	"url": "https://github.com/Shenton/nodebb-plugin-table-addclass",
+	"library": "./library.js",
+	"hooks": [
+		{ "hook": "filter:post.parse", "method": "parse", "callbacked": true }
+	]
+}
