@@ -7,7 +7,7 @@
         if (!data || !data.postData || !data.postData.content) {
             return callback(null, data);
         }
-        data.postData = data.postData.replace(/<table>/g, '<table class="table table-striped table-hover">');
+        data.postData.content = data.postData.content.replace(/<table>/g, '<table class="table table-striped table-hover">');
         callback(null, data);
     };
 

@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-table-addclass",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Add Bootstrap table classes to tables without class.",
   "main": "library.js",
   "scripts": {
@@ -27,6 +27,6 @@
   },
   "readme": "",
   "readmeFilename": "README.md",
-  "_id": "nodebb-plugin-table-addclass@0.0.1",
-  "_from": "nodebb-plugin-table-addclass@~0.0.1"
+  "_id": "nodebb-plugin-table-addclass@0.0.3",
+  "_from": "nodebb-plugin-table-addclass@~0.0.2"
 }
