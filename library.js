@@ -3,9 +3,12 @@
 
     var TableAddClass = {};
 
-    TableAddClass.parse = function(postContent, callback) {
-        postContent = postContent.replace(/<table>/g, '<table class="table table-striped table-hover">');
-        callback(null, postContent);
+    TableAddClass.parse = function(data, callback) {
+        if (!data || !data.postData || !data.postData.content) {
+            return callback(null, data);
+        }
+        data.postData = data.postData.replace(/<table>/g, '<table class="table table-striped table-hover">');
+        callback(null, data);
     };
 
     module.exports = TableAddClass;

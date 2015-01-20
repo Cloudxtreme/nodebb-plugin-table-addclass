@@ -5,6 +5,6 @@
 	"url": "https://github.com/Shenton/nodebb-plugin-table-addclass",
 	"library": "./library.js",
 	"hooks": [
-		{ "hook": "filter:post.parse", "method": "parse", "callbacked": true }
+		{ "hook": "filter:parse.post", "method": "parse", "callbacked": true }
 	]
 }
